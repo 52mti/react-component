@@ -1,0 +1,49 @@
+.grid {
+  margin-top: 2rem;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, 1fr);
+  grid-auto-rows: 5rem;
+}
+
+.grid > button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.output {
+  color: aliceblue;
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  word-wrap: break-word;
+  word-break: break-all;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  grid-column: 1 / -1;
+}
+
+.output .previous {
+  font-size: 1.6rem;
+}
+
+.output .current {
+  font-size: 2.5rem;
+}
+
+.span-two {
+  grid-column: span 2;
+}

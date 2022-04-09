@@ -1,0 +1,8 @@
+.container {
+  padding: 4rem;
+  width: 40rem;
+  height: 50rem;
+  background-color: rgba(191, 155, 155, 0.6);
+  font-size: 1.8rem;
+  margin: 2rem auto;
+}
